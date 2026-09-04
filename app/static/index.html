@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voz IA</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Voz IA</h1>
+    <p class="subtitle">Reconhecimento de voz com aprendizagem de novas palavras</p>
+
+    <div class="panel">
+      <h2>🎤 Falar</h2>
+      <button id="btnFalar">🎤 Gravar e reconhecer (3s)</button>
+      <div id="resultadoFalar" class="output"></div>
+    </div>
+
+    <div class="panel">
+      <h2>➕ Ensinar nova palavra</h2>
+      <input id="inputPalavra" type="text" placeholder="Nome da palavra (ex: Makonde)">
+      <br>
+      <button id="btnEnsinar">🎤 Gravar exemplo (2s)</button>
+      <div id="resultadoEnsinar" class="output"></div>
+    </div>
+
+    <div class="panel">
+      <h2>📚 Palavras aprendidas</h2>
+      <button id="btnListar">Atualizar lista</button>
+      <ul id="listaPalavras"></ul>
+    </div>
+
+    <div class="panel">
+      <h2>🧠 Treinar/Atualizar modelo</h2>
+      <button id="btnTreinar">Recalcular modelo</button>
+      <div id="resultadoTreinar" class="output"></div>
+    </div>
+
+    <div class="panel">
+      <h2>🗑️ Remover palavra</h2>
+      <input id="inputRemover" type="text" placeholder="Nome da palavra a remover">
+      <br>
+      <button id="btnRemover">Remover</button>
+      <div id="resultadoRemover" class="output"></div>
+    </div>
+
+    <div id="log" class="log"></div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

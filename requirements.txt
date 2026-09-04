@@ -1,0 +1,17 @@
+# === Dependências do backend web "Voz IA" ===
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9      # necessário para receber uploads (Form/File)
+
+numpy>=1.24.0
+librosa>=0.10.1
+soundfile>=0.12.1
+pydub>=0.25.1                 # descodifica o áudio webm enviado pelo navegador (usa ffmpeg)
+
+torch>=2.1.0
+transformers>=4.35.0
+scikit-learn>=1.3.0
+
+# Nota: sounddevice NÃO é necessário aqui — o microfone é acedido pelo
+# navegador do utilizador, não pelo servidor.
